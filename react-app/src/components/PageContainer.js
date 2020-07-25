@@ -19,8 +19,13 @@ class PageContainer extends React.Component {
             <Route path="/second"
             exact={true}
             render={() =>
-              <SecondPage />
+              <SecondPage/>
             } />
+            {/* <Route path="/second/:id"
+            exact={true}
+            render={(props) =>
+              <LandingPage id={props.match.params.id}/>
+            } /> */}
           </Switch>
         </Router>
       </BGPurple>

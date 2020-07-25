@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import { FullPageContainer } from '../styles';
 
 class SecondPage extends React.Component {
-
-
-  render() {
+  render(props) {
     return (
       <FullPageContainer>
         <TitleContainer>
