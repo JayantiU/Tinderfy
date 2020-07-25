@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FullPageContainer } from '../styles';
 
-class LandingPage extends React.Component {
+class SecondPage extends React.Component {
 
   // constructor
 
@@ -22,7 +22,7 @@ class LandingPage extends React.Component {
         </TitleContainer>
         <ContentContainer>
           <p><strong>
-            Hello, I'm HobbyHacks! &#128513;
+            Hello, I'm Second Page! &#128513;
           </strong></p>
           <p>
             Happy Hacking!
@@ -46,4 +46,4 @@ const ContentContainer = styled.div`
   margin-right: auto;
 `;
 
-export default LandingPage;
+export default SecondPage;

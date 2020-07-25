@@ -1,7 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import LandingPage from './LandingPage'
+import LandingPage from './LandingPage';
 import { BGPurple } from '../styles';
+import SecondPage from './SecondPage';
 
 class PageContainer extends React.Component {
 
@@ -14,6 +15,11 @@ class PageContainer extends React.Component {
             exact={true}
             render={() =>
               <LandingPage />
+            } />
+            <Route path="/second"
+            exact={true}
+            render={() =>
+              <SecondPage />
             } />
           </Switch>
         </Router>
