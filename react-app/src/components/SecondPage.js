@@ -4,15 +4,6 @@ import { FullPageContainer } from '../styles';
 
 class SecondPage extends React.Component {
 
-  // constructor
-
-  // componentDidMount() {
-  //   this.getAlbumCover();
-  // }
-
-  // getAlbumCover() {
-  //   this.spotifyClient.getPlaylist();
-  // }
 
   render() {
     return (
