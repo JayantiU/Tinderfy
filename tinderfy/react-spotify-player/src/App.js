@@ -6,6 +6,7 @@ import Player from "./Player";
 import logo from "./logo.svg";
 import "./App.css";
 
+
 class App extends Component {
   constructor() {
     super();
@@ -100,6 +101,12 @@ class App extends Component {
             >
               Login to Spotify
             </a>
+
+            // <div class='background'>
+            // </div>
+
+
+            
           )}
           {this.state.token && !this.state.no_data && (
             <Player
