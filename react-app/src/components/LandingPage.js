@@ -15,8 +15,8 @@ class LandingPage extends React.Component {
         <img src={back} width="1450" height="820" />
         <ButtonContainer>
           <LandingButton> BEGIN </LandingButton>
+          <h1> Hello </h1>
         </ButtonContainer>
-        
       </BigContainer>
     );
   }
