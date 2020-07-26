@@ -12,9 +12,12 @@ const Player = props => {
     width: (props.progress_ms * 100 / props.item.duration_ms) + '%'
   };
 
+
   return (
     <div className="App">
       <div className="main-wrapper">
+      
+
         <div className="now-playing__img">
           <img src={props.item.album.images[0].url} />
         </div>
@@ -25,10 +28,17 @@ const Player = props => {
           </div>
           <div className="now-playing__status">
             {props.is_playing ? "Playing" : "Paused"}
+
           </div>
           <div className="progress">
             <div className="progress__bar" style={progressBarStyles} />
           </div>
+
+          <div className = "buttonContainer">
+               <button type="button" id = "button1">Yes</button>
+               <button type="button" id = "button2">No</button>
+          </div>
+
         </div>
         <div className="background" style={backgroundStyles} />{" "}
       </div>
