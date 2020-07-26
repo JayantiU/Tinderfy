@@ -1,15 +1,15 @@
-import styled from 'styled-components';
-import './index.css';
+import styled from "styled-components";
+import "./index.css";
+import back from "./components/background2.png";
 
 const BGPurple = styled.div`
-  background: #E6E6FA;
+  background: #e6e6fa;
   color: #696969;
 `;
 
 const BGBlue = styled.div`
-  background: #B0C4DE;
+  background: #b0c4de;
   color: #708090;
-  
 `;
 
 const FullPageContainer = styled.div`
@@ -20,12 +20,14 @@ const FullPageContainer = styled.div`
 `;
 
 const SubPageContainer = styled(FullPageContainer)`
-  padding: 30px;
+  padding: 10px;
 `;
 
-export {
-  BGPurple,
-  BGBlue,
-  FullPageContainer,
-  SubPageContainer
-};
+const BigContainer = styled.div`
+  position: relative;
+  background-image: url(${back});
+  height: 820px;
+  width: 1450px;
+`;
+
+export { BGPurple, BGBlue, FullPageContainer, SubPageContainer, BigContainer };

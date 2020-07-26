@@ -1,0 +1,32 @@
+.BigContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.BigContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.BigContainer .btn {
+  position: absolute;
+  top: 580px;
+  left: 720px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana;
+  padding: 38px 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 70px;
+  text-align: center;
+}
+
+.BigContainer .btn:hover {
+  background-color: white;
+  color: black;
+}

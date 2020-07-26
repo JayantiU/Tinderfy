@@ -1,49 +1,44 @@
-import React from 'react';
-import styled from 'styled-components';
-import { FullPageContainer } from '../styles';
+import React from "react";
+import styled from "styled-components";
+import { FullPageContainer, BigContainer } from "../styles";
+import back from "./background2.png";
+import "./buttonStyle.css";
 
 class LandingPage extends React.Component {
-
-  // constructor
-
-  // componentDidMount() {
-  //   this.getAlbumCover();
-  // }
-
-  // getAlbumCover() {
-  //   this.spotifyClient.getPlaylist();
-  // }
-
   render() {
     return (
-      <FullPageContainer>
-        <TitleContainer>
+      <BigContainer>
+        {/* <TitleContainer>
           <h1>Hi!</h1>
-        </TitleContainer>
-        <ContentContainer>
-          <p><strong>
-            Hello, I'm HobbyHacks! &#128513;
-          </strong></p>
-          <p>
-            Happy Hacking!
-          </p>
-        </ContentContainer>
-      </FullPageContainer>
-    )
+        </TitleContainer> */}
+        {/* <ContentContainer></ContentContainer> */}
+        <img src={back} width="1450" height="820" />
+        <LandingButton> BEGIN </LandingButton>
+      </BigContainer>
+    );
   }
-};
+}
 
 const TitleContainer = styled.div`
-  max-width: 500px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 `;
 
 const ContentContainer = styled.div`
-  max-width: 500px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 `;
+
+var LandingButton = styled.button`
+  padding: 38px 100px;
+`;
+
+// const BigContainer = styled.div`
+//   max-width: 500px;
+//   background-image: url(${back});
+// `;
 
 export default LandingPage;
