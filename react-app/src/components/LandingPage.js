@@ -11,11 +11,11 @@ class LandingPage extends React.Component {
         {/* <TitleContainer>
           <h1>Hi!</h1>
         </TitleContainer> */}
+
         {/* <ContentContainer></ContentContainer> */}
         <img src={back} width="1450" height="820" />
         <ButtonContainer>
-          <LandingButton> BEGIN </LandingButton>
-          <h1> Hello </h1>
+          <LandingButton href=""> B E G I N </LandingButton>
         </ButtonContainer>
       </BigContainer>
     );
@@ -39,12 +39,21 @@ var LandingButton = styled.button`
   position: relative;
   padding: 38px 100px;
   z-index: 5;
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana;
+  padding: 38px 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 70px;
+  text-align: center;
 `;
 
 var ButtonContainer = styled.div`
   position: absolute;
-  top: 200px;
-  left: 200px;
+  top: 533px;
+  left: 610px;
   width: auto;
   z-index: 5;
 `;
